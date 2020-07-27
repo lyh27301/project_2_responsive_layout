@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+img {
+    object-fit: contain;
+}
+
+
 /* navigation bar */
 header {
     width: 100vw;
@@ -197,6 +202,10 @@ footer .hr{
         height: auto;
     }
 
+    .project img {
+        max-height: 300px;
+    }
+
     .project > * {
         min-width: 0;
         flex: 1 1 100%;
@@ -271,6 +280,10 @@ footer .hr{
 
     .project {
         flex: 0 1 30%;
+    }
+
+    .project img {
+        max-height: 250px;
     }
 
     #footer-info {
