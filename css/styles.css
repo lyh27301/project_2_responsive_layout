@@ -3,7 +3,7 @@
     font-family: 'Mukta', sans-serif;
     line-height: 1.5rem;
     text-align: center;
-    color: rgb(87, 88, 88);
+    color: rgb(106, 115, 122);
     box-sizing: border-box;
 }
 
@@ -15,12 +15,13 @@ img {
 /* navigation bar */
 header {
     width: 100vw;
-    background-color: #fafafa;
+    background-color: rgb(253, 254, 254);
     text-align: center;
     padding: .5px 0 40px;
 }
 
 #header-name {
+    font-family: 'Passion One', 'Mukta', sans-serif;
     display: block;
     font-size: 1.6rem;
     padding: 20px 0 20px 0;
@@ -30,7 +31,9 @@ header {
     margin: 20px auto 0;
 }
 
-#main-nav li {
+#main-nav a {
+    font-family: 'Passion One', 'Mukta', sans-serif;
+    font-size: 1.3rem;
     background-color: white;
     text-transform: uppercase;
     display: block;
@@ -42,6 +45,10 @@ header {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: rgb(140, 168, 179) ;
 }
 
 #profile{
@@ -57,16 +64,45 @@ a {
 #intro {
     margin: 10px 7% 0;
     font-weight: lighter;
+    font-size: 1.15rem;
+    line-height: 1.7rem;
     color: rgb(129, 131, 133);
+}
+/* skill */
+#skill {
+    padding: 0 7vw 40px;
+    background-color: rgba(248, 256, 226);
+}
+
+#skill-list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-inline-start: 0;
+}
+
+.skill {
+    background-color: rgb(185, 219, 98);
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    border-radius: 10px;
 }
 
 /* protfolio */
-#ph {
-    font-size: medium;
+#ph,
+#sh {
+    font-family: 'Passion One', 'Mukta', sans-serif;
+    font-size: 1.3rem;
     text-align: center;
+    font-weight: 900;
     text-transform: uppercase;
-    margin: 40px auto;
+    margin: 0 auto;
+    padding: 30px 0;
 }
+
 
 #portfolio {
     width: 100vw;
@@ -82,6 +118,12 @@ a {
     padding-top: 15px;
 }
 
+.project h3 {
+    font-family: 'Passion One', 'Mukta', sans-serif;
+    font-weight: 400;
+    margin-bottom: .7em;
+}
+
 .project p {
     width: 86vw;
     margin: 0 auto;
@@ -90,7 +132,7 @@ a {
 
 /* footer */
 footer {
-    background-color: #fafafa;
+    background-color: rgb(238, 248, 248);
     padding: 2rem 0;
 }
 
@@ -99,21 +141,28 @@ footer > * {
     margin: 0 auto;
 }
 footer h1 {
+    font-family: 'Passion One', 'Mukta', sans-serif;
     text-transform: uppercase;
-    font-size: medium;
-    padding-bottom: .8rem;
+    font-size: larger;
 }
 
-footer > p {
+#footer-info > p:not(#msg) {
     color: rgb(167, 172, 175);
     font-weight: 300;
-    padding: .7rem 0;
+    margin: .6rem auto;
+}
+
+#footer-info * {
+    color: #777;
+}
+
+#msg {
+    font-weight: 300;
 }
 
 .contact-info {
     font-weight: 500;
     padding-left: .8rem;
-    color: rgb(139, 138, 138);
 }
 
 footer .hr{
@@ -144,8 +193,9 @@ footer .hr{
 
 #footer-container-1 *,
 #footer-container-2 * {
-    font-weight: 650;
-    font-size: .9rem;
+    font-family: 'Passion One', 'Mukta', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 #footer-container-1 a {
@@ -161,8 +211,8 @@ footer .hr{
         justify-content: center;
     }
 
-    #main-nav>li {
-        background-color: #fafafa;
+    #main-nav>a {
+        background-color: rgb(253, 254, 254);
     }
 
     #profile {
@@ -176,6 +226,7 @@ footer .hr{
         min-width: 0;
         margin-left: 0;
         margin-right: 5px;
+        text-align: start;
         flex: 1 1 55%;
         order: -1;
     }
@@ -184,6 +235,16 @@ footer .hr{
         min-width: 0;
         margin-left: 20px;
         flex: 1 1 45%;
+    }
+
+    #skill-list {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80vw;
+    }
+
+    #skill {
+        padding: 2vw 0 5vw;
     }
 
     #project-container {
@@ -221,7 +282,7 @@ footer .hr{
     }
 
     #footer-container-2 * {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
     #footer-nav {
@@ -234,6 +295,11 @@ footer .hr{
     #footer-nav>a {
         flex: 1 1 30%;
         padding-left: 12px;
+    }
+
+    #msg {
+        margin: 1.5em auto;
+        max-width: 70vw;
     }
 }
 
@@ -257,7 +323,7 @@ footer .hr{
         padding: 0;
     }
 
-    #main-nav li{
+    #main-nav a{
         margin: 0;
         padding: 0 10px;
     }
@@ -269,12 +335,16 @@ footer .hr{
         margin-right: 5%;
         font-size: 1.2rem;
         text-align: start;
-        font-weight: 350;
-        line-height: 2.25rem;
+        font-weight: 300;
+        line-height: 2rem;
+    }
+
+    #skill-list {
+        max-width: 60vw;
     }
 
     #ph {
-        font-size: larger;
+        font-size: 1.5rem;
         margin: 70px auto;
     }
 
@@ -292,12 +362,15 @@ footer .hr{
 
     footer p {
         margin: 15px auto;
+    }
+
+    #footer-info {
         padding-bottom: 30px;
     }
 
     #msg {
-        padding-top: 10px;
-        padding-bottom: 25px;
+        padding-top: 5px;
+        padding-bottom: 15px;
     }
 
     footer * {
@@ -306,7 +379,7 @@ footer .hr{
     }
     
     #footer-container-2 * {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     #footer-nav>a {

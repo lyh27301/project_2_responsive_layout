@@ -7,6 +7,8 @@
     <title>Portfolio</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -14,9 +16,10 @@
         <div id="nav-bar">
             <h1 id="header-name">Student Name</h1>
             <nav id="main-nav">
-                <li><a href="#home">home</a></li>
-                <li><a href="#portfolio">portfolio</a></li>
-                <li><a href="#contact">contact</a></li>
+                <a href="#home">home</a>
+                <a href="#skill">skill</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#contact">contact</a>
             </nav>
         </div>
 
@@ -27,47 +30,59 @@
         </div>
     </header>
 
+    <div id="skill">
+        <h1 id="sh">SKILL</h1>
+        <ul id="skill-list">
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">REACT</li>
+            <li class="skill">VUE</li>
+            <li class="skill">JAVASCRIPT</li>
+            <li class="skill">TYPESCRIPT</li>
+        </ul>
+    </div>
+
     <main id="portfolio">
         <h1 id="ph">portfolio</h1>
         <div id="project-container">
             <div class="project">
                 <img src="images/portfolio-1.png" alt="project 1 - Marketing Page">
-                <h3>Marketing Page</h2>
+                <h3>Marketing Page</h3>
                     <p>This project shows the front page of a marketing website meant for a specific business I'm
                         interested in.</p>
             </div>
 
             <div class="project">
                 <img src="images/portfolio-2.png" alt="project 2 - Search Page">
-                <h3>Search Page</h2>
+                <h3>Search Page</h3>
                     <p>This project searches through a specific database to find information that the user is trying to
                         look up.</p>
             </div>
 
             <div class="project">
                 <img src="images/portfolio-3.png" alt="project 3 - Travel app">
-                <h3>Travel App</h2>
+                <h3>Travel App</h3>
                     <p>This project compares travel times based on different transportation methods and tells you the
                         best one.</p>
             </div>
 
             <div class="project">
                 <img src="images/portfolio-4.png" alt="project 4 - Map of Favorite Spaces">
-                <h3>Map of Favorite Spaces</h2>
+                <h3>Map of Favorite Spaces</h3>
                     <p>This project uses mapping apps to plot points for my favorite spots in the city for a
                         do-it-yourself walking tour. </p>
             </div>
 
             <div class="project">
                 <img src="images/portfolio-5.png" alt="project 5 - Photo Gallery">
-                <h3>Photo Gallery</h2>
+                <h3>Photo Gallery</h3>
                     <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate
                         through photos.</p>
             </div>
 
             <div class="project">
                 <img src="images/portfolio-6.png" alt="project 6 - Calculator">
-                <h3>Calculator</h2>
+                <h3>Calculator</h3>
                     <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
             </div>
         </div>
@@ -94,6 +109,7 @@
             <p>Student name</p>
             <nav id="footer-nav">
                 <a href="#home">HOME</a>
+                <a href="#skill">SKILL</a>
                 <a href="#portfolio">PORTFOLIO</a>
                 <a href="#contact">CONTACT</a>
             </nav>
