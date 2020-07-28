@@ -71,7 +71,7 @@ a:hover {
 /* skill */
 #skill {
     padding: 0 7vw 40px;
-    background-color: rgba(248, 255, 226);
+    background-color: rgb(232, 244, 248);
 }
 
 #skill-list {
@@ -83,7 +83,7 @@ a:hover {
 }
 
 .skill {
-    background-color: rgb(185, 219, 98);
+    background-color: rgb(122, 180, 245);
     color: white;
     padding: 5px 10px;
     margin-bottom: 15px;
@@ -132,7 +132,7 @@ a:hover {
 
 /* footer */
 footer {
-    background-color: rgb(238, 248, 248);
+    background-color: rgb(253, 253, 254);
     padding: 2rem 0;
 }
 
