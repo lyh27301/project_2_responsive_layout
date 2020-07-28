@@ -71,7 +71,7 @@ a:hover {
 /* skill */
 #skill {
     padding: 0 7vw 40px;
-    background-color: rgba(248, 256, 226);
+    background-color: rgba(248, 255, 226);
 }
 
 #skill-list {
@@ -79,7 +79,7 @@ a:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-inline-start: 0;
+    padding-left: 0;
 }
 
 .skill {
